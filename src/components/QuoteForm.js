@@ -79,5 +79,11 @@ class QuoteForm extends Component {
   }
 }
 
+const mapDispatchToProps = dispatch => {
+  return {
+    dispatchQuote: (quote) => dispatch(addQuote(quote))
+  }
+}
+
 //add arguments to connect as needed
 export default connect()(QuoteForm);
