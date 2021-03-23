@@ -26,6 +26,10 @@ const QuoteCard = (props) =>
           <button
             type="button"
             className="btn btn-secondary"
+            onClick={(event) => {
+              event.preventDefault()
+              props.downvoteQuote(props.quote.id)
+            }}
           >
             Downvote
           </button>
