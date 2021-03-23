@@ -16,6 +16,10 @@ const QuoteCard = (props) =>
           <button
             type="button"
             className="btn btn-primary"
+            onClick={(event) => {
+              event.preventDefault()
+              props.upvoteQuote(props.quote.id)
+            }}
           >
             Upvote
           </button>
